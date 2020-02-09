@@ -1,0 +1,140 @@
+*{
+    margin: 0; 
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+} 
+
+/* conteiner */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    /*border: 1px solid #000; */
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+        padding: 0px;
+    }
+}
+/* linha */
+.linha{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/*evitar que o conteudo fique maiorque a linha e evita que eles flutuem para fora das linhas */
+.linha:before, .linha::after{
+    content: "";
+    display: table;
+}
+
+.linha::after{
+    clear: both;
+}
+
+/* coluna */
+.colunas{
+    /*automaticamente os elementos flutuem para a esquerda*/
+    display: inline-block;
+    /*usar o topo como alinhamento*/
+    vertical-align: top;
+    min-height: 1px;
+    padding-left:5px;
+    padding-right:5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;/*para funcionar no internet Explore*/
+    *display: inline;
+}
+
+    @media (min-width:480px) {
+        /* Duas Colunas  se tiver em um dispositivo com menos que 480px ele nao roda essa div*/
+        .coluna-2{
+            width: 50%;
+        }
+}
+
+@media (min-whidt:728px){
+    .coluna-3{
+        width: 33.3333%;
+    }
+}
+
+  
+
+/*tsete*/       
+.LateralDireita{
+    background: rgb(32,49,65);
+    padding:5px;
+    text-align: center;
+    margin: 2px 0;
+    color:#fff;
+}
+
+.LateralDireita h3{
+    padding-top: 15px;
+}
+
+
+
+.cabecario{
+    background:rgb(221, 221, 221);
+    padding:5px;
+    text-align: center;
+    margin: 2px 0;
+    color:#fff;
+}
+
+.corpoEsquerdo{
+    background:rgb(250, 250, 250);
+    padding:5px;
+    text-align: center;
+    margin: 2px 0;
+    color:black;
+}
+
+.gig{
+    height: 50px;
+}
+            
+p img{
+    width:200px;
+    height:200px;
+    border-radius: 50000%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+h2{
+    padding-top: 15px;
+}
+
+h3{
+    background-color: rgb(32,49,65);
+}
+.titulo{
+    color: rgb(32,49,65);
+}
+
+.TopicoEsquedo{
+    color: white;
+     height: 50px;
+      padding-top: 15px;
+      border-radius: 56% 150% 0% 70%;
+}
+
+.Topicos{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    border: 1px solid rgb(32,49,65); 
+}
+
+li{
+    text-align: left;
+}
